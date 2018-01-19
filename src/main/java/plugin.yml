@@ -1,0 +1,41 @@
+## YAML Template.
+---
+
+## YAML Template.
+name: DrocsidePlugin
+version: 1.2.3
+author: DOorDIE
+description: "その手に希望と夢を。鯖に活力と秩序を。"
+website: ~
+#依存するプラグイン
+depand: []
+#---
+main: jp.dip.drocside.drocsideplugin.DrocsidePlugin
+commands:
+    kill:
+        description: 皆殺しのお手伝いしちゃう！！
+        usage: /<command>
+    serverinfo:
+        description: ~
+        usage: ~
+    testteiki:
+        description: ~
+        usage: ~
+    tp:
+        description: ~
+        usage: ~
+    tpa:
+        description: ~
+        usage: ~
+    tpahere:
+        description: ~
+        usage: ~
+    tpt:
+        description: ~
+        usage: ~
+    sabamiso:
+        description: ~
+        usage: ~
+    toro:
+        description: ~
+        usage: ~
