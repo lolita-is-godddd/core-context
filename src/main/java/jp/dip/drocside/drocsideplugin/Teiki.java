@@ -2,11 +2,9 @@ package jp.dip.drocside.drocsideplugin;
 
 import org.bukkit.ChatColor;
 import org.bukkit.scheduler.BukkitRunnable;
-import jp.dip.drocside.drocsideplugin.API;
+import jp.dip.drocside.drocsideplugin.API.API;
 
-import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Teiki extends BukkitRunnable {
     static final API API;

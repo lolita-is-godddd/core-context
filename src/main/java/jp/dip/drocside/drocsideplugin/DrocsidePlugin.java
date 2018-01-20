@@ -24,7 +24,6 @@ import java.util.HashMap;
 /*
     TODO : 青森県産リンゴ
     TODO : とろ鯖、さば味噌鯖へのエイリアス
-    FIXME : OnPlayerDeathで固まる
  */
 public class DrocsidePlugin extends JavaPlugin {
     static final boolean DEBUG = true;
@@ -45,12 +44,20 @@ public class DrocsidePlugin extends JavaPlugin {
         getCommand("tpt").setExecutor(CE);
         getCommand("toro").setExecutor(CE);
         getCommand("sabamiso").setExecutor(CE);
+        getCommand("ban").setExecutor(CE);
+        getCommand("unban").setExecutor(CE);
+        getCommand("jail").setExecutor(CE);
+        getCommand("unjail").setExecutor(CE);
+        getCommand("mute").setExecutor(CE);
+        getCommand("unmute").setExecutor(CE);
         new Teiki().runTaskTimer(this, 0, 20 * 60 * 5);
 
         //final OnPlayerCommand onPlayerCommand = new OnPlayerCommand(this);
-        //final OnPlayerDeath onPlayerDeath = new OnPlayerDeath(this);
+        final OnPlayerDeath onPlayerDeath = new OnPlayerDeath(this);
         //final RightClickEvent rightClickEvent = new RightClickEvent(this);
         final OnPlayerLogIO onPlayerLogIO = new OnPlayerLogIO(this);
+        getLogger().info("enable successful.");
+        getLogger().info("Special Thanks: sjcl, toropon, and hamyuu");
         Bukkit.broadcastMessage("Enabled DrocsidePlugin!");
     }
 

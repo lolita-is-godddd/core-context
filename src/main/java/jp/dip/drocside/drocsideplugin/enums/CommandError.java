@@ -18,7 +18,8 @@ public enum CommandError {
 	UNKNOWN("不明なコマンドです。"),
 	NOT_IMPL("実装されていません。"),
 	TP_DENY("$1さんはTPを拒否しています。\n" + ChatColor.GOLD + "/tpa" + ChatColor.RESET + "を使ってみてください。"),
-	PLAYER_NOT_FOUND("$1さんは見つかりませんでした。"),;
+	PLAYER_NOT_FOUND("$1さんは見つかりませんでした。"),
+	PLAYER_ONLY("プレイヤーから実行してください。");
 	private String message;
 	CommandError(String message) {
 		this.message = message;

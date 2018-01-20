@@ -1,9 +1,6 @@
-## YAML Template.
 ---
-
-## YAML Template.
 name: DrocsidePlugin
-version: 1.2.3
+version: 1.3.2
 author: DOorDIE
 description: "その手に希望と夢を。鯖に活力と秩序を。"
 website: ~
@@ -39,3 +36,52 @@ commands:
     toro:
         description: ~
         usage: ~
+    jail:
+        description: ~
+        usage: ~
+        permission: drocside.penalty.jail
+    unjail:
+        description: ~
+        usage: ~
+        permission: drocside.penalty.jail
+    mute:
+        description: ~
+        usage: ~
+        permission: drocside.penalty.mute
+    unmute:
+        description: ~
+        usage: ~
+        permission: drocside.penalty.mute
+    ban:
+        description: ~
+        usage: ~
+        permission: drocside.penalty.ban
+    unban:
+        description: ~
+        usage: ~
+        permission: drocside.penalty.ban
+    kick:
+        description: ~
+        usage: ~
+        permission: drocside.penalty.kick
+permissions:
+    drocside.tp.ignore:
+        description: /tptの無視
+        default: op
+    drocside.penalty.*:
+        description: BAN・UNBAN・ミュート・KICK・JAIL・UNJAIL
+        default: op
+    drocside.penalty.mute:
+        description: ミュート
+        default: op
+    drocside.penalty.ban:
+        description: BAN・UNBAN
+        default: op
+    drocside.penalty.kick:
+        description: KICK
+        default: op
+    drocside.penalty.jail:
+        description: JAIL
+        default: op
+
+
