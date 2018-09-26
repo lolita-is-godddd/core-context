@@ -1,2 +1,2 @@
-# drocside-plugin
+# core-context
 このプラグインはアンライセンスで提供し、無断使用を禁じます。
